@@ -10,7 +10,7 @@ class Player extends Component {
     eightys: false,
     hiphop: false,
     jazz: false,
-    reggae: false,
+    raggae: false,
   }
 
   iconStyle = { width: "fit-content" }
@@ -123,10 +123,6 @@ class Player extends Component {
     }
   ];
 
-
-
-
-
   displayBars=(propertyName)=>{
     this.setState({
       playing: true,
@@ -134,7 +130,7 @@ class Player extends Component {
       eightys: false,
       hiphop: false,
       jazz: false,
-      reggae: false,
+      raggae: false,
       [propertyName]: true
     })
   }
