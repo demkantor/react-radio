@@ -1,7 +1,9 @@
 {
   "name": "internet-radio",
-  "version": "0.1.0",
+  "version": "0.1.2",
+  "description": "listen to multiple internet radio stations",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
