@@ -1,6 +1,6 @@
 {
   "name": "internet-radio",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "listen to multiple internet radio stations",
   "private": true,
   "proxy": "http://localhost:5000",
@@ -8,26 +8,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.14",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modular-audio-player": "^1.2.0",
     "react-scripts": "3.4.1"
   },
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^2.0.2"
-  },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "npm run client",
     "build": "react-scripts build",
     "client": "react-scripts start",
-    "server": "nodemon  --watch server server/server.js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
