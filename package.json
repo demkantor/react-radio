@@ -1,8 +1,14 @@
 {
   "name": "internet-radio",
   "version": "0.1.6",
+  "author": "demkantor",
+  "license": "ISC",
   "description": "listen to multiple internet radio stations",
   "main": "public/electron.js",
+  "build": {
+    "appId": "internet.radio"
+  },
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -23,7 +29,7 @@
     "heroku-postbuild": "npm run build",
     "dev": "react-scripts start",
     "change-this-to-just-start-if-using-heroku-start": "serve -s build",
-    "eletron-build": "electron-builder",
+    "electron-build": "electron-builder",
     "build": "npm run react-build && npm run electron-build",
     "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
@@ -42,8 +48,6 @@
       "last 1 safari version"
     ]
   },
-  "author": "demkantor",
-  "license": "ISC",
   "heroku-run-build-script": true,
   "engines": {
     "node": "12.14.1",
