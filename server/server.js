@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
 const port = process.env.PORT || 5000;
 
 /** ---------- MIDDLEWARE ---------- **/
@@ -21,3 +21,8 @@ app.use(cors());
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
   });
+
+app.get('/', (req, res)=> {
+  console.log("hi!");
+  res.send({message: 'hello'});
+})
